@@ -1,23 +1,26 @@
-public class Hamster extends HomeAnimal implements AnimalActions{
+/**
+ * Hamster
+ */
+public class Hamster extends HomeAnimal{
 
     public Hamster(String name, int age, String color) {
         super(name, age, color);
     }
 
     @Override
-    public void eat() {
-        System.out.println(this.getName() + " поел орехи и яблочко");
+    public void eat(Human human) {
+        System.out.printf("%s получил еду от %s, поел орехи и яблочко", this.getName(), human.getFullName());
         
     }
 
     @Override
-    public void reaction() {
+    public void reaction(Human human) {
         System.out.println(this.getName() + " бегает в колесе");
         
     }
 
     @Override
-    public void reply() {
+    public void reply(Human human) {
         System.out.println(this.getName() + " с интересом выглядывает из домика");
         
     }
@@ -27,5 +30,5 @@ public class Hamster extends HomeAnimal implements AnimalActions{
         System.out.println(this.getName() + " говорит 'Пи-пи-пи'");
         
     }
-    
+       
 }

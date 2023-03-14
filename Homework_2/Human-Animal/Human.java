@@ -16,15 +16,20 @@ public class Human {
         return age;
     }
 
-    public void feedAnimal() {
-        System.out.printf("%s покормил домашнего питомца\n", fullName);
+    public void feedAnimal(HomeAnimal homeAnimal) {
+        System.out.printf("%s покормил %s\n", fullName, homeAnimal.getName());
     }
 
-    public void callAnimal() {
-        System.out.printf("%s позвал домашнего питомца\n", fullName);
+    public void callAnimal(HomeAnimal homeAnimal) {
+        System.out.printf("%s позвал %s\n", fullName, homeAnimal.getName());
     }
 
-    public void watchAnimal() {
-        System.out.printf("%s наблюдает за домашним питомцем\n", fullName);
+    public void watchAnimal(HomeAnimal homeAnimal) {
+        System.out.printf("%s наблюдает за %s\n", fullName, homeAnimal.getName());
     }
+
+    public void giveCommand(HomeAnimal homeAnimal, String command) {
+        System.out.printf("%s дал %s команду: '%s'\n", fullName ,homeAnimal.getName(), command);
+    }
+
 }

@@ -33,4 +33,12 @@ public abstract class HomeAnimal {
         this.color = color;
     }
 
+    public abstract void speak();
+
+    public abstract void eat(Human human);
+
+    public abstract void reaction(Human human);
+
+    public abstract void reply(Human human);
+
 }
