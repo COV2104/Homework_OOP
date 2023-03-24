@@ -44,7 +44,7 @@ public class RationalNumberMenu {
     private static void add() {
         System.out.println("Введите первое число: ");
         Double r1 = scanner.nextDouble();
-        System.out.println("Введите первое число: ");
+        System.out.println("Введите второе число: ");
         Double r2 = scanner.nextDouble();
         Double result = r1 + r2;
         logger.log(String.format(r1 + " + " + r2 + " = " + result));
@@ -54,7 +54,7 @@ public class RationalNumberMenu {
     private static void subtract() {
         System.out.println("Введите первое число: ");
         Double r1 = scanner.nextDouble();
-        System.out.println("Введите первое число: ");
+        System.out.println("Введите второе число: ");
         Double r2 = scanner.nextDouble();
         Double result = r1 - r2;
         logger.log(String.format(r1 + " - " + r2 + " = " + result));
@@ -64,7 +64,7 @@ public class RationalNumberMenu {
     private static void multiply() {
         System.out.println("Введите первое число: ");
         Double r1 = scanner.nextDouble();
-        System.out.println("Введите первое число: ");
+        System.out.println("Введите второе число: ");
         Double r2 = scanner.nextDouble();
         Double result = r1 * r2;
         logger.log(String.format(r1 + " * " + r2 + " = " + result));
@@ -74,7 +74,7 @@ public class RationalNumberMenu {
     private static void divide() {
         System.out.println("Введите первое число: ");
         Double r1 = scanner.nextDouble();
-        System.out.println("Введите первое число: ");
+        System.out.println("Введите второе число: ");
         Double r2 = scanner.nextDouble();
         Double result = r1 / r2;
         logger.log(String.format(r1 + " / " + r2 + " = " + result));
